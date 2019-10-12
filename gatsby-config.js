@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `ohmpiromrak`,
+    title: `ohm piromrak`,
     author: `Ohm Piromrak`,
-    description: `Personal blog by Ohm Piromrak. Make a dream come true with word and code.`,
+    description: `Personal blog by Ohm Piromrak. I make things with words and code.`,
     siteUrl: `https://ohmpiromrak.com`,
     email: `ohm.piromrak@gmail.com`,
     social: {

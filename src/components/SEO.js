@@ -32,11 +32,11 @@ function SEO({ description, lang, meta, image, title, slug }) {
       }}
       {...(title
         ? {
-            titleTemplate: `%s — ${siteMetadata.title}`,
+            titleTemplate: `%s - ${siteMetadata.title}`,
             title,
           }
         : {
-            title: `${siteMetadata.title} — A blog by Ohm Piromrak`,
+            title: `${siteMetadata.title} - A blog by Ohm Piromrak`,
           })}
       meta={[
         {

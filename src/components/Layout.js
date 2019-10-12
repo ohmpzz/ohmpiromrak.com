@@ -1,12 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
+
 import LayoutHeader from "./LayoutHeader"
 
 import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props
+    const { title, description, children } = this.props
 
     let header = (
       <h3
@@ -29,33 +31,38 @@ class Layout extends React.Component {
     )
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: ` ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header>
-          <LayoutHeader />
-          {header}
-        </header>
-        <main>{children}</main>
-        <footer
+      <>
+        <Helmet>
+          <meta name="description" content={description} />
+        </Helmet>
+        <div
           style={{
-            marginTop: rhythm(2),
-            marginBottom: rhythm(1),
-            textAlign: "center",
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            maxWidth: rhythm(24),
+            padding: ` ${rhythm(3 / 4)}`,
           }}
         >
-          © {new Date().getFullYear()}, Personal blog by
-          {` `}
-          <a href="https://github.com/ohmpzz" rel="nofollow noreferrer">
-            Ohm Piromrak
-          </a>
-        </footer>
-      </div>
+          <header>
+            <LayoutHeader />
+            {header}
+          </header>
+          <main>{children}</main>
+          <footer
+            style={{
+              marginTop: rhythm(2),
+              marginBottom: rhythm(1),
+              textAlign: "center",
+            }}
+          >
+            © {new Date().getFullYear()}, Personal blog by
+            {` `}
+            <a href="https://github.com/ohmpzz" rel="nofollow noreferrer">
+              Ohm Piromrak
+            </a>
+          </footer>
+        </div>
+      </>
     )
   }
 }
