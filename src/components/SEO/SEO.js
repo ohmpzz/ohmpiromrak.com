@@ -61,6 +61,7 @@ function SEO({ description, lang, meta, image, title, slug }) {
         property="og:image"
         content="https://www.taniarascia.com/static/136fd55a83b9d45f6f681de0491e979e/4148e/computer.png"
       />
+
       <meta property="og:image:secure_url" content={metaImage} />
       <meta property="og:site_name" content="Ohm Piromrak" />
 
