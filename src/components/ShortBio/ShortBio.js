@@ -67,7 +67,7 @@ export default function ShortBio() {
       </div>
       <div css={{ textAlign: `center` }}>
         <h1 css={{ fontSize: rhythm(1), textAlign: `center` }}>{author}</h1>
-        <p>Software Engineer passionate about Web Development.</p>
+        <p>I'm passionate about Web Development.</p>
         <GetInTouch email={email} title="Get in touch via email" />
       </div>
     </div>

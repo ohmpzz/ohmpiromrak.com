@@ -1,8 +1,10 @@
+const header = require("./header.js")
+
 module.exports = {
   siteMetadata: {
-    title: `ohm piromrak`,
+    title: `Ohm Piromrak`,
     author: `Ohm Piromrak`,
-    description: `Personal blog by Ohm Piromrak. I make things with words and code.`,
+    description: `I make things with words and code.`,
     siteUrl: `https://ohmpiromrak.com`,
     email: `ohm.piromrak@gmail.com`,
     social: {
@@ -10,6 +12,14 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          ...header,
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -59,8 +69,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Ohm Piromrak`,
+        short_name: `Ohm`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

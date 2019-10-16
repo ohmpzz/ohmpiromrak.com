@@ -2,6 +2,8 @@ import React from "react"
 import LayoutHeader from "../LayoutHeader"
 import { rhythm } from "../../utils/typography"
 
+import SEO from "../SEO"
+
 function LayoutFluid(props) {
   return (
     <div
@@ -11,6 +13,7 @@ function LayoutFluid(props) {
         maxWidth: rhythm(40),
       }}
     >
+      <SEO />
       <header>
         <LayoutHeader />
       </header>
@@ -22,7 +25,7 @@ function LayoutFluid(props) {
           textAlign: "center",
         }}
       >
-        © {new Date().getFullYear()}, Personal blog by
+        © {new Date().getFullYear()}, Created with ❤️ by
         {` `}
         <a href="https://github.com/ohmpzz" rel="nofollow noreferrer">
           Ohm Piromrak

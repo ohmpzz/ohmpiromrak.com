@@ -18,7 +18,6 @@ export default function Header() {
       <a href="https://github.com/ohmpzz" rel="noreferrer nofollow">
         GitHub
       </a>
-      <HeaderLink to="/blog" title="Blog" />
     </Nav>
   )
 }

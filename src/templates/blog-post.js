@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Helmet from "react-helmet"
 
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
@@ -19,9 +18,6 @@ class BlogPostTemplate extends React.Component {
         title={siteTitle}
         description={siteDescription}
       >
-        <Helmet>
-          <title>{`${siteTitle} - A blog by Ohm Piromrak`}</title>
-        </Helmet>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.spoiler || post.excerpt}
