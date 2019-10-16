@@ -12,7 +12,7 @@ function SEO({ description, lang, meta, image, title, slug }) {
       query {
         image: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
           childImageSharp {
-            fixed(width: 400, height: 400) {
+            fixed(height: 600) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -47,7 +47,7 @@ function SEO({ description, lang, meta, image, title, slug }) {
       </title>
       {/* General tags */}
       <meta name="description" content={metaDescription} />
-      <meta name="image" content={metaImage} />
+      {/* <meta name="image" content={metaImage} /> */}
       <meta name="theme-color" content="#ffffff" />
       <meta name="title" content={metaTitle} />
       <meta name="author" content="Ohm Piromrak" />
