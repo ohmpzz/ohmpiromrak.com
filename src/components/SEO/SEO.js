@@ -47,7 +47,7 @@ function SEO({ description, lang, meta, image, title, slug }) {
       </title>
       {/* General tags */}
       <meta name="description" content={metaDescription} />
-      {/* <meta name="image" content={metaImage} /> */}
+      <meta name="image" content={metaImage} />
       <meta name="theme-color" content="#ffffff" />
       <meta name="title" content={metaTitle} />
       <meta name="author" content="Ohm Piromrak" />
@@ -57,7 +57,10 @@ function SEO({ description, lang, meta, image, title, slug }) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
-      <meta property="og:image" content={metaImage} />
+      <meta
+        property="og:image"
+        content="https://www.taniarascia.com/static/136fd55a83b9d45f6f681de0491e979e/4148e/computer.png"
+      />
       <meta property="og:image:secure_url" content={metaImage} />
       <meta property="og:site_name" content="Ohm Piromrak" />
 
