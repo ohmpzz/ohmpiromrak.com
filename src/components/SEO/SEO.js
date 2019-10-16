@@ -46,28 +46,22 @@ function SEO({ description, lang, meta, image, title, slug }) {
         {title || `${siteMetadata.title} - I make things with words and code.`}
       </title>
 
-      <link rel="canonical" href="/"></link>
+      <link rel="canonical" href="https://ohmpiromrak.com/"></link>
       {/* General tags */}
       <meta name="description" content={metaDescription} />
-      <meta
-        name="image"
-        content="https://cdn-images-1.medium.com/max/1200/1*29XAq2WrtejUCxRzSgDLXA.png"
-      />
+      <meta name="image" content={metaImage} />
       <meta name="theme-color" content="#ffffff" />
       <meta name="title" content={metaTitle} />
       <meta name="author" content="Ohm Piromrak" />
 
       {/* OpenGraph tags */}
+      <meta property="og:image" content={metaImage} />
+      <meta property="og:image:secure_url" content={metaImage} />
       <meta property="og:url" content={metaUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
-      <meta
-        property="og:image"
-        content="https://cdn-images-1.medium.com/max/1200/1*29XAq2WrtejUCxRzSgDLXA.png"
-      />
 
-      <meta property="og:image:secure_url" content={metaImage} />
       <meta property="og:site_name" content="Ohm Piromrak" />
 
       {/* Twitter Card tags */}
