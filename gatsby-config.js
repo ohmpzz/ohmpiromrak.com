@@ -16,8 +16,11 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          ...header,
+          // ...header,
         },
+        mergeSecurityHeaders: false, // boolean to turn off the default security headers
+        mergeLinkHeaders: false, // boolean to turn off the default gatsby js headers
+        mergeCachingHeaders: false,
       },
     },
     {
