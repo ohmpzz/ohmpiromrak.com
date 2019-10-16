@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, image, title, slug }) {
   const metaDescription = description || siteMetadata.description
   const metaImage = image
     ? `${siteMetadata.siteUrl}/${image}`
-    : `${siteMetadata.siteUrl}/${childImageSharp.fixed.src}`
+    : `${siteMetadata.siteUrl}${childImageSharp.fixed.src}`
   const metaUrl = `${siteMetadata.siteUrl}${slug}`
   const metaTitle = title || siteMetadata.title
 
