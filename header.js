@@ -36,7 +36,7 @@ module.exports = {
     "Access-Control-Allow-Methods: GET, OPTIONS",
     "Access-Control-Allow-Origin: https://ohmpiromrak.com, https://www.google-analytics.com, https://ajax.cloudflare.com",
   ],
-  "/(.*)": [
+  "/*": [
     "cache-control:public, max-age=0, must-revalidate",
     "Content-Security-Policy: default-src 'self' https://www.google-analytics.com https://ajax.cloudflare.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://ajax.cloudflare.com; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https: data:; object-src 'none';",
     "feature-policy: payment 'none';microphone 'none';camera 'none'",
