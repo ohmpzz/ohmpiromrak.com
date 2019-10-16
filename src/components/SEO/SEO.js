@@ -58,6 +58,7 @@ function SEO({ description, lang, meta, image, title, slug }) {
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:image" content={metaImage} />
+      <meta property="og:image:secure_url" content={metaImage} />
       <meta property="og:site_name" content="Ohm Piromrak" />
 
       {/* Twitter Card tags */}
