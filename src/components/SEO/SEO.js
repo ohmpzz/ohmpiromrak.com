@@ -45,6 +45,8 @@ function SEO({ description, lang, meta, image, title, slug }) {
       <title>
         {title || `${siteMetadata.title} - I make things with words and code.`}
       </title>
+
+      <link rel="canonical" href="/"></link>
       {/* General tags */}
       <meta name="description" content={metaDescription} />
       <meta name="image" content={metaImage} />
