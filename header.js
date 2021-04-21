@@ -1,7 +1,7 @@
 module.exports = {
   "/*": [
     "cache-control:public, max-age=0, must-revalidate",
-    "Content-Security-Policy: default-src 'self' https://www.google-analytics.com https://ajax.cloudflare.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://ajax.cloudflare.com; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https: data:; object-src 'none';",
+    "Content-Security-Policy: default-src 'self' https://www.google-analytics.com https://ajax.cloudflare.com https://pagead2.googlesyndication.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://ajax.cloudflare.com https://pagead2.googlesyndication.com; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https: data:; object-src 'none';",
     "feature-policy: payment 'none';microphone 'none';camera 'none'",
     "referrer-policy: no-referrer-when-downgrade",
     "strict-transport-security: max-age=31536000",
@@ -10,12 +10,12 @@ module.exports = {
     "x-frame-options: SAMEORIGIN",
     "x-xss-protection: 1; mode=block",
     "Access-Control-Allow-Methods: GET, OPTIONS",
-    "Access-Control-Allow-Origin: https://ohmpiromrak.com, https://www.google-analytics.com, https://ajax.cloudflare.com",
+    "Access-Control-Allow-Origin: https://ohmpiromrak.com, https://www.google-analytics.com, https://ajax.cloudflare.com https://pagead2.googlesyndication.com",
   ],
 
   "/(.*\\.(js|json|css|ico|png)$)": [
     "cache-control: public,max-age=31536000,immutable",
-    "Content-Security-Policy: default-src 'self' https://www.google-analytics.com https://ajax.cloudflare.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://ajax.cloudflare.com; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https: data:; object-src 'none';",
+    "Content-Security-Policy: default-src 'self' https://www.google-analytics.com https://ajax.cloudflare.com https://pagead2.googlesyndication.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://ajax.cloudflare.com https://pagead2.googlesyndication.com; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https: data:; object-src 'none';",
     "feature-policy: payment 'none';microphone 'none';camera 'none'",
     "referrer-policy: no-referrer-when-downgrade",
     "strict-transport-security: max-age=31536000",
@@ -24,11 +24,11 @@ module.exports = {
     "x-frame-options: SAMEORIGIN",
     "x-xss-protection: 1; mode=block",
     "Access-Control-Allow-Methods: GET, OPTIONS",
-    "Access-Control-Allow-Origin: https://ohmpiromrak.com, https://www.google-analytics.com, https://ajax.cloudflare.com",
+    "Access-Control-Allow-Origin: https://ohmpiromrak.com, https://www.google-analytics.com, https://ajax.cloudflare.com https://pagead2.googlesyndication.com",
   ],
   "/sw.js": [
     "cache-control: public,max-age=31536000,immutable",
-    "Content-Security-Policy: default-src 'self' https://www.google-analytics.com https://ajax.cloudflare.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://ajax.cloudflare.com; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https: data:; object-src 'none';",
+    "Content-Security-Policy: default-src 'self' https://www.google-analytics.com https://ajax.cloudflare.com https://pagead2.googlesyndication.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://ajax.cloudflare.com https://pagead2.googlesyndication.com; style-src 'self' data: 'unsafe-inline'; img-src 'self' data: https: blob:; font-src 'self' https: data:; object-src 'none';",
     "feature-policy: payment 'none';microphone 'none';camera 'none'",
     "referrer-policy: no-referrer-when-downgrade",
     "strict-transport-security: max-age=31536000",
@@ -37,6 +37,6 @@ module.exports = {
     "x-frame-options: SAMEORIGIN",
     "x-xss-protection: 1; mode=block",
     "Access-Control-Allow-Methods: GET, OPTIONS",
-    "Access-Control-Allow-Origin: https://ohmpiromrak.com, https://www.google-analytics.com, https://ajax.cloudflare.com",
+    "Access-Control-Allow-Origin: https://ohmpiromrak.com, https://www.google-analytics.com, https://ajax.cloudflare.com https://pagead2.googlesyndication.com",
   ],
 }
